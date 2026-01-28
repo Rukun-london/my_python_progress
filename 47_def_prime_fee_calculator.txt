@@ -1,0 +1,16 @@
+
+def prime_cal(is_prime):
+    is_prime=is_prime.strip().lower()
+    if is_prime=="yes":
+        return 0  # ("No fee! ")
+    elif is_prime=="no":
+        return 5 #("fee is £5")
+    else:
+        return None #("Invalid input! enter yes or no only!")
+is_prime_input=input("is the user a prime member. enter yes/no:")
+result=prime_cal(is_prime_input)
+print(result)
+if result != None :
+    print(f"Your fee is: £{result}")
+else:
+    print(f"invalid input. Run the program again.")

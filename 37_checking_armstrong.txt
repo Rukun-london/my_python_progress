@@ -1,0 +1,15 @@
+arm=int(input("Enter a number: "))
+if arm <0:
+    print("enter a valid number.")
+else:
+    total=0
+    temp=arm
+    power=len(str(arm))
+    for _ in range(int(power)):
+        digit= temp % 10
+        total=total + digit ** power
+        temp=temp//10
+    if total==arm:
+        print(f"{arm} is an armstrong number.")
+    else:
+        print(f"{arm} is not an armstrong number.")

@@ -1,0 +1,12 @@
+n1=int(input("enter lower range : "))
+n2=int(input("enter upper range : "))
+for num in range(n1, n2+1):
+    power=len(str(num))
+    temp=num
+    total=0
+    while temp > 0:
+        digit=temp % 10
+        total= total + digit ** int(power)
+        temp=temp//10
+    if total==num:
+        print(num)

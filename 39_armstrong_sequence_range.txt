@@ -1,0 +1,8 @@
+n1=int(input("enter lower range : "))
+n2=int(input("enter upper range : "))
+for num in range(n1, n2+1):
+    power=len(str(num))
+    if sum(int(d)**power for d in str(num))== num:
+        print(num)
+    
+    

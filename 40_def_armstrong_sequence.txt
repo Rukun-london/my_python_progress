@@ -1,0 +1,13 @@
+def armstrong_sequence(num):
+    power=len(str(num))
+    return num==sum(int(d)**power for d in str(num))
+        
+    
+    
+x=int(input("enter lower range : "))
+y=int(input("enter upper range : "))
+for n in range(x,y+1):
+    if armstrong_sequence(n):
+        print(n)
+    
+    
